@@ -10,7 +10,7 @@ main_page = MainPage()
 @allure.severity(Severity.NORMAL)
 @allure.label('owner', 'Elena Rogozina')
 @allure.feature('Main page')
-@allure.story('Change language')
+@allure.title('Change language')
 @allure.link('https://nexign.com/ru')
 def test_change_language():
     main_page.open()
