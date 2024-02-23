@@ -18,11 +18,7 @@ def browser_opt():
 
     selenoid_capabilities = {
         'browserName': 'chrome',
-        'browserVersion': '100',
-        'selenoid:options': {
-            'enableVNC': True,
-            'enableVideo': True
-        }
+        'browserVersion': '100'
     }
 
     browser.config.base_url = 'https://nexign.com/ru/'
@@ -42,7 +38,5 @@ def browser_opt():
 
     attach.add_screenshot(browser)
     attach.add_logs(browser)
-    attach.add_html(browser)
-    attach.add_video(browser)
 
     browser.quit()
